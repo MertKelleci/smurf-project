@@ -1,0 +1,210 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TextField?>
+<BorderPane fx:controller="sample.Controller"
+            xmlns:fx="http://javafx.com/fxml">
+
+    <left>
+        <VBox alignment="CENTER" onKeyPressed="#oyun">
+            <padding>
+                <Insets left="20"/>
+            </padding>
+            <Accordion fx:id="accordion" focusTraversable="false">
+                <panes>
+                    <TitledPane text="Gargamel">
+                        <Label>
+                            <graphic>
+                                <ImageView fx:id="GargamelYol">
+                                </ImageView>
+                            </graphic>
+                        </Label>
+                    </TitledPane>
+
+                    <TitledPane text="Azman">
+                        <Label>
+                            <graphic>
+                                <ImageView fx:id="AzmanYol">
+                                </ImageView>
+                            </graphic>
+                        </Label>
+                    </TitledPane>
+                    <TitledPane text="Kontroller">
+                        <Label prefWidth="100" text="Yukarı, Aşağı, Sağ, Sol yön tuşları sırası ile: W, S, D, A" wrapText="true" VBox.vgrow="SOMETIMES"/>
+                    </TitledPane>
+                </panes>
+            </Accordion>
+
+            <Label fx:id="puan" prefWidth="100" wrapText="true"/>
+        </VBox>
+    </left>
+    <center>
+        <GridPane gridLinesVisible="true"  onKeyPressed="#oyun" fx:id="gridPane" focusTraversable="true">
+            <padding>
+                <Insets left="20" right="20" bottom="20" top="20"/>
+            </padding>
+            <ImageView fx:id="id_0_0" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <ImageView fx:id="id_1_0" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+            <ImageView fx:id="id_2_0" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+            <ImageView fx:id="id_3_0" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+            <ImageView fx:id="id_4_0" GridPane.columnIndex="4" GridPane.rowIndex="0"/>
+            <ImageView fx:id="id_5_0" GridPane.columnIndex="5" GridPane.rowIndex="0"/>
+            <ImageView fx:id="id_6_0" GridPane.columnIndex="6" GridPane.rowIndex="0"/>
+            <ImageView fx:id="id_7_0" GridPane.columnIndex="7" GridPane.rowIndex="0"/>
+            <ImageView fx:id="id_8_0" GridPane.columnIndex="8" GridPane.rowIndex="0"/>
+            <ImageView fx:id="id_9_0" GridPane.columnIndex="9" GridPane.rowIndex="0"/>
+            <ImageView fx:id="id_10_0" GridPane.columnIndex="10" GridPane.rowIndex="0"/>
+            <ImageView fx:id="id_11_0" GridPane.columnIndex="11" GridPane.rowIndex="0"/>
+            <ImageView fx:id="id_12_0" GridPane.columnIndex="12" GridPane.rowIndex="0"/>
+
+            <ImageView fx:id="id_0_1" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <ImageView fx:id="id_1_1" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            <ImageView fx:id="id_2_1" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+            <ImageView fx:id="id_3_1" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
+            <ImageView fx:id="id_4_1" GridPane.columnIndex="4" GridPane.rowIndex="1"/>
+            <ImageView fx:id="id_5_1" GridPane.columnIndex="5" GridPane.rowIndex="1"/>
+            <ImageView fx:id="id_6_1" GridPane.columnIndex="6" GridPane.rowIndex="1"/>
+            <ImageView fx:id="id_7_1" GridPane.columnIndex="7" GridPane.rowIndex="1"/>
+            <ImageView fx:id="id_8_1" GridPane.columnIndex="8" GridPane.rowIndex="1"/>
+            <ImageView fx:id="id_9_1" GridPane.columnIndex="9" GridPane.rowIndex="1"/>
+            <ImageView fx:id="id_10_1" GridPane.columnIndex="10" GridPane.rowIndex="1"/>
+            <ImageView fx:id="id_11_1" GridPane.columnIndex="11" GridPane.rowIndex="1"/>
+            <ImageView fx:id="id_12_1" GridPane.columnIndex="12" GridPane.rowIndex="1"/>
+
+            <ImageView fx:id="id_0_2" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <ImageView fx:id="id_1_2" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+            <ImageView fx:id="id_2_2" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+            <ImageView fx:id="id_3_2" GridPane.columnIndex="3" GridPane.rowIndex="2"/>
+            <ImageView fx:id="id_4_2" GridPane.columnIndex="4" GridPane.rowIndex="2"/>
+            <ImageView fx:id="id_5_2" GridPane.columnIndex="5" GridPane.rowIndex="2"/>
+            <ImageView fx:id="id_6_2" GridPane.columnIndex="6" GridPane.rowIndex="2"/>
+            <ImageView fx:id="id_7_2" GridPane.columnIndex="7" GridPane.rowIndex="2"/>
+            <ImageView fx:id="id_8_2" GridPane.columnIndex="8" GridPane.rowIndex="2"/>
+            <ImageView fx:id="id_9_2" GridPane.columnIndex="9" GridPane.rowIndex="2"/>
+            <ImageView fx:id="id_10_2" GridPane.columnIndex="10" GridPane.rowIndex="2"/>
+            <ImageView fx:id="id_11_2" GridPane.columnIndex="11" GridPane.rowIndex="2"/>
+            <ImageView fx:id="id_12_2" GridPane.columnIndex="12" GridPane.rowIndex="2"/>
+
+            <ImageView fx:id="id_0_3" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <ImageView fx:id="id_1_3" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+            <ImageView fx:id="id_2_3" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+            <ImageView fx:id="id_3_3" GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+            <ImageView fx:id="id_4_3" GridPane.columnIndex="4" GridPane.rowIndex="3"/>
+            <ImageView fx:id="id_5_3" GridPane.columnIndex="5" GridPane.rowIndex="3"/>
+            <ImageView fx:id="id_6_3" GridPane.columnIndex="6" GridPane.rowIndex="3"/>
+            <ImageView fx:id="id_7_3" GridPane.columnIndex="7" GridPane.rowIndex="3"/>
+            <ImageView fx:id="id_8_3" GridPane.columnIndex="8" GridPane.rowIndex="3"/>
+            <ImageView fx:id="id_9_3" GridPane.columnIndex="9" GridPane.rowIndex="3"/>
+            <ImageView fx:id="id_10_3" GridPane.columnIndex="10" GridPane.rowIndex="3"/>
+            <ImageView fx:id="id_11_3" GridPane.columnIndex="11" GridPane.rowIndex="3"/>
+            <ImageView fx:id="id_12_3" GridPane.columnIndex="12" GridPane.rowIndex="3"/>
+
+            <ImageView fx:id="id_0_4" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+            <ImageView fx:id="id_1_4" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+            <ImageView fx:id="id_2_4" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+            <ImageView fx:id="id_3_4" GridPane.columnIndex="3" GridPane.rowIndex="4"/>
+            <ImageView fx:id="id_4_4" GridPane.columnIndex="4" GridPane.rowIndex="4"/>
+            <ImageView fx:id="id_5_4" GridPane.columnIndex="5" GridPane.rowIndex="4"/>
+            <ImageView fx:id="id_6_4" GridPane.columnIndex="6" GridPane.rowIndex="4"/>
+            <ImageView fx:id="id_7_4" GridPane.columnIndex="7" GridPane.rowIndex="4"/>
+            <ImageView fx:id="id_8_4" GridPane.columnIndex="8" GridPane.rowIndex="4"/>
+            <ImageView fx:id="id_9_4" GridPane.columnIndex="9" GridPane.rowIndex="4"/>
+            <ImageView fx:id="id_10_4" GridPane.columnIndex="10" GridPane.rowIndex="4"/>
+            <ImageView fx:id="id_11_4" GridPane.columnIndex="11" GridPane.rowIndex="4"/>
+            <ImageView fx:id="id_12_4" GridPane.columnIndex="12" GridPane.rowIndex="4"/>
+
+            <ImageView fx:id="id_0_5" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+            <ImageView fx:id="id_1_5" GridPane.columnIndex="1" GridPane.rowIndex="5"/>
+            <ImageView fx:id="id_2_5" GridPane.columnIndex="2" GridPane.rowIndex="5"/>
+            <ImageView fx:id="id_3_5" GridPane.columnIndex="3" GridPane.rowIndex="5"/>
+            <ImageView fx:id="id_4_5" GridPane.columnIndex="4" GridPane.rowIndex="5"/>
+            <ImageView fx:id="id_5_5" GridPane.columnIndex="5" GridPane.rowIndex="5"/>
+            <ImageView fx:id="id_6_5" GridPane.columnIndex="6" GridPane.rowIndex="5"/>
+            <ImageView fx:id="id_7_5" GridPane.columnIndex="7" GridPane.rowIndex="5"/>
+            <ImageView fx:id="id_8_5" GridPane.columnIndex="8" GridPane.rowIndex="5"/>
+            <ImageView fx:id="id_9_5" GridPane.columnIndex="9" GridPane.rowIndex="5"/>
+            <ImageView fx:id="id_10_5" GridPane.columnIndex="10" GridPane.rowIndex="5"/>
+            <ImageView fx:id="id_11_5" GridPane.columnIndex="11" GridPane.rowIndex="5"/>
+            <ImageView fx:id="id_12_5" GridPane.columnIndex="12" GridPane.rowIndex="5"/>
+
+            <ImageView fx:id="id_0_6" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+            <ImageView fx:id="id_1_6" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+            <ImageView fx:id="id_2_6" GridPane.columnIndex="2" GridPane.rowIndex="6"/>
+            <ImageView fx:id="id_3_6" GridPane.columnIndex="3" GridPane.rowIndex="6"/>
+            <ImageView fx:id="id_4_6" GridPane.columnIndex="4" GridPane.rowIndex="6"/>
+            <ImageView fx:id="id_5_6" GridPane.columnIndex="5" GridPane.rowIndex="6"/>
+            <ImageView fx:id="id_6_6" GridPane.columnIndex="6" GridPane.rowIndex="6"/>
+            <ImageView fx:id="id_7_6" GridPane.columnIndex="7" GridPane.rowIndex="6"/>
+            <ImageView fx:id="id_8_6" GridPane.columnIndex="8" GridPane.rowIndex="6"/>
+            <ImageView fx:id="id_9_6" GridPane.columnIndex="9" GridPane.rowIndex="6"/>
+            <ImageView fx:id="id_10_6" GridPane.columnIndex="10" GridPane.rowIndex="6"/>
+            <ImageView fx:id="id_11_6" GridPane.columnIndex="11" GridPane.rowIndex="6"/>
+            <ImageView fx:id="id_12_6" GridPane.columnIndex="12" GridPane.rowIndex="6"/>
+
+            <ImageView fx:id="id_0_7" GridPane.columnIndex="0" GridPane.rowIndex="7"/>
+            <ImageView fx:id="id_1_7" GridPane.columnIndex="1" GridPane.rowIndex="7"/>
+            <ImageView fx:id="id_2_7" GridPane.columnIndex="2" GridPane.rowIndex="7"/>
+            <ImageView fx:id="id_3_7" GridPane.columnIndex="3" GridPane.rowIndex="7"/>
+            <ImageView fx:id="id_4_7" GridPane.columnIndex="4" GridPane.rowIndex="7"/>
+            <ImageView fx:id="id_5_7" GridPane.columnIndex="5" GridPane.rowIndex="7"/>
+            <ImageView fx:id="id_6_7" GridPane.columnIndex="6" GridPane.rowIndex="7"/>
+            <ImageView fx:id="id_7_7" GridPane.columnIndex="7" GridPane.rowIndex="7"/>
+            <ImageView fx:id="id_8_7" GridPane.columnIndex="8" GridPane.rowIndex="7"/>
+            <ImageView fx:id="id_9_7" GridPane.columnIndex="9" GridPane.rowIndex="7"/>
+            <ImageView fx:id="id_10_7" GridPane.columnIndex="10" GridPane.rowIndex="7"/>
+            <ImageView fx:id="id_11_7" GridPane.columnIndex="11" GridPane.rowIndex="7"/>
+            <ImageView fx:id="id_12_7" GridPane.columnIndex="12" GridPane.rowIndex="7"/>
+
+            <ImageView fx:id="id_0_8" GridPane.columnIndex="0" GridPane.rowIndex="8"/>
+            <ImageView fx:id="id_1_8" GridPane.columnIndex="1" GridPane.rowIndex="8"/>
+            <ImageView fx:id="id_2_8" GridPane.columnIndex="2" GridPane.rowIndex="8"/>
+            <ImageView fx:id="id_3_8" GridPane.columnIndex="3" GridPane.rowIndex="8"/>
+            <ImageView fx:id="id_4_8" GridPane.columnIndex="4" GridPane.rowIndex="8"/>
+            <ImageView fx:id="id_5_8" GridPane.columnIndex="5" GridPane.rowIndex="8"/>
+            <ImageView fx:id="id_6_8" GridPane.columnIndex="6" GridPane.rowIndex="8"/>
+            <ImageView fx:id="id_7_8" GridPane.columnIndex="7" GridPane.rowIndex="8"/>
+            <ImageView fx:id="id_8_8" GridPane.columnIndex="8" GridPane.rowIndex="8"/>
+            <ImageView fx:id="id_9_8" GridPane.columnIndex="9" GridPane.rowIndex="8"/>
+            <ImageView fx:id="id_10_8" GridPane.columnIndex="10" GridPane.rowIndex="8"/>
+            <ImageView fx:id="id_11_8" GridPane.columnIndex="11" GridPane.rowIndex="8"/>
+            <ImageView fx:id="id_12_8" GridPane.columnIndex="12" GridPane.rowIndex="8"/>
+
+            <ImageView fx:id="id_0_9" GridPane.columnIndex="0" GridPane.rowIndex="9"/>
+            <ImageView fx:id="id_1_9" GridPane.columnIndex="1" GridPane.rowIndex="9"/>
+            <ImageView fx:id="id_2_9" GridPane.columnIndex="2" GridPane.rowIndex="9"/>
+            <ImageView fx:id="id_3_9" GridPane.columnIndex="3" GridPane.rowIndex="9"/>
+            <ImageView fx:id="id_4_9" GridPane.columnIndex="4" GridPane.rowIndex="9"/>
+            <ImageView fx:id="id_5_9" GridPane.columnIndex="5" GridPane.rowIndex="9"/>
+            <ImageView fx:id="id_6_9" GridPane.columnIndex="6" GridPane.rowIndex="9"/>
+            <ImageView fx:id="id_7_9" GridPane.columnIndex="7" GridPane.rowIndex="9"/>
+            <ImageView fx:id="id_8_9" GridPane.columnIndex="8" GridPane.rowIndex="9"/>
+            <ImageView fx:id="id_9_9" GridPane.columnIndex="9" GridPane.rowIndex="9"/>
+            <ImageView fx:id="id_10_9" GridPane.columnIndex="10" GridPane.rowIndex="9"/>
+            <ImageView fx:id="id_11_9" GridPane.columnIndex="11" GridPane.rowIndex="9"/>
+            <ImageView fx:id="id_12_9" GridPane.columnIndex="12" GridPane.rowIndex="9"/>
+
+            <ImageView fx:id="id_0_10" GridPane.columnIndex="0" GridPane.rowIndex="10"/>
+            <ImageView fx:id="id_1_10" GridPane.columnIndex="1" GridPane.rowIndex="10"/>
+            <ImageView fx:id="id_2_10" GridPane.columnIndex="2" GridPane.rowIndex="10"/>
+            <ImageView fx:id="id_3_10" GridPane.columnIndex="3" GridPane.rowIndex="10"/>
+            <ImageView fx:id="id_4_10" GridPane.columnIndex="4" GridPane.rowIndex="10"/>
+            <ImageView fx:id="id_5_10" GridPane.columnIndex="5" GridPane.rowIndex="10"/>
+            <ImageView fx:id="id_6_10" GridPane.columnIndex="6" GridPane.rowIndex="10"/>
+            <ImageView fx:id="id_7_10" GridPane.columnIndex="7" GridPane.rowIndex="10"/>
+            <ImageView fx:id="id_8_10" GridPane.columnIndex="8" GridPane.rowIndex="10"/>
+            <ImageView fx:id="id_9_10" GridPane.columnIndex="9" GridPane.rowIndex="10"/>
+            <ImageView fx:id="id_10_10" GridPane.columnIndex="10" GridPane.rowIndex="10"/>
+            <ImageView fx:id="id_11_10" GridPane.columnIndex="11" GridPane.rowIndex="10"/>
+            <ImageView fx:id="id_12_10" GridPane.columnIndex="12" GridPane.rowIndex="10"/>
+        </GridPane>
+    </center>
+</BorderPane>
